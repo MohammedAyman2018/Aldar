@@ -1,7 +1,9 @@
 
 /* Navbar style */ 
 nav
+    transition: all 0.4s ease
     height: 96px
+    background: transparent
     a.navbar-brand
         display: inline-block
         padding: 0
@@ -17,6 +19,7 @@ nav
             color: white
 
     div.collapse
+        transition: all 0.4s ease
         background-color: #222222 
         ul.navbar-nav li.nav-item
             text-align: center
@@ -28,13 +31,24 @@ nav
                 font-weight: bold
                 &:hover
                     color: $blue
+    &.scrolled
+        background-color: $white
+        button i
+            color: black
+        div.collapse
+            transition: all 0.4s ease
+            background-color: $white
+            ul.navbar-nav li.nav-item    
+                a
+                    color: black
+
 
 /* small devices (Phones, 426px and down) */
 @media (max-width: 576px)
     nav
-        background-color: $white
+        // background-color: $white
         button i
-            color: black !important
+            color: white 
 
         .navbar-collapse
             margin-top: 10px
