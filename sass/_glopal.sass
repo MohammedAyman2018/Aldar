@@ -3,7 +3,7 @@ $white: #E7E8EA
 
 $text-md-big: 30px
 $text-sm-big: 20px 
-
+/* Start global styles*/
 *
   font-family: 'El Messiri', sans-serif
 
@@ -13,6 +13,7 @@ a, a:hover
 a.ourbtn,button.ourbtn
   background-color: darken($blue, 5)
   transition: all 0.4s ease
+  border: none
   &:hover
     background-color: lighten($blue, 5)
   &:focus, &:active
@@ -23,11 +24,17 @@ h2.header
   border-bottom: 2px solid #000
   display: inline-block
 
-/* You can set card size from here */
+/* You can set card size from here Add parent class then .card */
 .recommended-books ,.latest-releases
   .card
     min-height: 650px
+    transition: all 0.4s ease
+    cursor: pointer
+    &:hover
+      transform: translateY(-10px)
     .card-img-top
       flex-grow: 2
     .card-body
       flex-grow: 0
+
+/* Start global styles*/

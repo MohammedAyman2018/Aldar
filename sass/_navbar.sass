@@ -2,16 +2,15 @@
 /* Navbar style */ 
 nav
     transition: all 0.4s ease
-    height: 96px
     background: transparent
+    align-items: start !important
     a.navbar-brand
         display: inline-block
         padding: 0
         margin-top: 0
-        height: 4em
         max-width: 100%
         img
-            height: 4em
+            height: 4rem
             max-width: 100%
     button
         outline: none
@@ -29,6 +28,8 @@ nav
             a
                 color: white
                 font-weight: bold
+                transition: all 0.4s ease
+
                 &:hover
                     color: $blue
     &.scrolled
@@ -41,6 +42,9 @@ nav
             ul.navbar-nav li.nav-item    
                 a
                     color: black
+                    transition: all 0.4s ease
+                    &:hover
+                        color: $blue
 
 
 /* small devices (Phones, 426px and down) */

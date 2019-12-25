@@ -1,3 +1,4 @@
+/* Start global styles*/
 * {
   font-family: 'El Messiri', sans-serif;
 }
@@ -11,6 +12,7 @@ a.ourbtn, button.ourbtn {
   background-color: #135065;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
+  border: none;
 }
 
 a.ourbtn:hover, button.ourbtn:hover {
@@ -27,9 +29,17 @@ h2.header {
   display: inline-block;
 }
 
-/* You can set card size from here */
+/* You can set card size from here Add parent class then .card */
 .recommended-books .card, .latest-releases .card {
   min-height: 650px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.recommended-books .card:hover, .latest-releases .card:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
 }
 
 .recommended-books .card .card-img-top, .latest-releases .card .card-img-top {
@@ -44,7 +54,8 @@ h2.header {
           flex-grow: 0;
 }
 
-/* Loaders style */
+/* Start global styles*/
+/* Start loader style */
 .preload {
   width: 100%;
   height: 100%;
@@ -70,24 +81,26 @@ h2.header {
   z-index: 60;
 }
 
+/* End loader style */
 /* Navbar style */
 nav {
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
-  height: 96px;
   background: transparent;
+  -webkit-box-align: start !important;
+      -ms-flex-align: start !important;
+          align-items: start !important;
 }
 
 nav a.navbar-brand {
   display: inline-block;
   padding: 0;
   margin-top: 0;
-  height: 4em;
   max-width: 100%;
 }
 
 nav a.navbar-brand img {
-  height: 4em;
+  height: 4rem;
   max-width: 100%;
 }
 
@@ -119,6 +132,8 @@ nav div.collapse ul.navbar-nav li.nav-item.active a {
 nav div.collapse ul.navbar-nav li.nav-item a {
   color: white;
   font-weight: bold;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 nav div.collapse ul.navbar-nav li.nav-item a:hover {
@@ -141,6 +156,12 @@ nav.scrolled div.collapse {
 
 nav.scrolled div.collapse ul.navbar-nav li.nav-item a {
   color: black;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+nav.scrolled div.collapse ul.navbar-nav li.nav-item a:hover {
+  color: #17617A;
 }
 
 /* small devices (Phones, 426px and down) */
@@ -253,4 +274,49 @@ nav.scrolled div.collapse ul.navbar-nav li.nav-item a {
 }
 
 /* End latest-releases Styles */
+/* Start Form styles */
+form .form-group input, form .form-group textarea {
+  border: none;
+  border-radius: 0;
+}
+
+form .form-group input {
+  background-color: #e2e8f0;
+  padding: 1rem .75rem;
+}
+
+form .form-group textarea {
+  background-color: #e2e8f0;
+}
+
+/* Start Form styles */
+/* Start footer styles */
+footer {
+  background-color: #17617A;
+}
+
+footer hr {
+  border: 1px solid white;
+  background: #fff;
+}
+
+footer ul.social li i {
+  font-size: 35px;
+}
+
+/* small devices (Phones, 426px and down) */
+@media (max-width: 576px) {
+  footer p.header {
+    font-size: 20px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  footer p.header {
+    font-size: 20px;
+  }
+}
+
+/* End footer styles */
 /*# sourceMappingURL=main.css.map */
