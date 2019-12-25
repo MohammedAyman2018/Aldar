@@ -1,0 +1,51 @@
+
+/* Navbar style */ 
+nav
+    height: 96px
+    a.navbar-brand
+        display: inline-block
+        padding: 0
+        margin-top: 0
+        height: 4em
+        max-width: 100%
+        img
+            height: 4em
+            max-width: 100%
+    button
+        outline: none
+        i
+            color: white
+
+    div.collapse
+        background-color: #222222 
+        ul.navbar-nav li.nav-item
+            text-align: center
+            flex-grow: 1
+            &.active a
+                color: $blue !important       
+            a
+                color: white
+                font-weight: bold
+                &:hover
+                    color: $blue
+
+/* small devices (Phones, 426px and down) */
+@media (max-width: 576px)
+    nav
+        background-color: $white
+        button i
+            color: black !important
+
+        .navbar-collapse
+            margin-top: 10px
+            ul li 
+                text-align: center
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) 
+    .navbar-collapse
+        margin-top: 10px
+        background-color: transparent !important
+
+/* End Navbar styles */

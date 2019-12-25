@@ -1,0 +1,54 @@
+/* Start Banner styles */
+.banner
+    background-image: url('../img/banner.png')
+    .welcome
+        z-index: 20
+            
+    .overlay
+        content: ''
+        position: absolute
+        z-index: 0
+        top: 0
+        left: 0
+        height: 100%
+        width: 100%
+        background-color: rgba(0,0,0,0.6)
+    .scroll
+        animation-name: scroll
+        animation-duration: 0.8s
+        animation-iteration-count: infinite
+        animation-timing-function: ease-out
+        
+        font-size: $text-sm-big
+        position: absolute
+        bottom: 50px
+        left: 50% 
+
+@keyframes scroll
+    0%
+        transform: translateY(-10px)
+    100%
+        transform: translateY(10px)
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (max-width: 576px)
+    .banner .welcome
+        h1
+            font-size: $text-sm-big
+            line-height: 1.6
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 577px) and (max-width: 991px) 
+    .banner .welcome
+        h1
+            font-size: $text-md-big
+            line-height: 1.6
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) 
+    .banner .welcome
+        h1
+            font-size: auto
+            line-height: 1.6
