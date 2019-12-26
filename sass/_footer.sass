@@ -1,22 +1,21 @@
 /* Start footer styles */
 footer
+    p
+        font-size: 13px
+        display: inline-block
+        &.header
+            font-size: 16px
+            font-weight: bold
+
     background-color: $blue
-    hr
-        border: 1px solid white 
-        background: #fff 
+    .copy-rights
+        hr
+            border: 0.5px solid white 
+            background: #fff 
+            margin-bottom: 5px
+        p
+            display: block
     ul.social li i
-        font-size: 35px
+        font-size: 20px
 
-/* small devices (Phones, 426px and down) */
-@media (max-width: 576px)
-    footer
-        p.header
-            font-size: 20px
-
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) 
-    footer
-        p.header
-            font-size: 20px
 /* End footer styles */
