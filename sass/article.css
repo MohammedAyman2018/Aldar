@@ -205,13 +205,24 @@ nav.scrolled div.collapse ul.navbar-nav li.nav-item a:hover {
 }
 
 /* End Navbar styles */
-/* Start latest-releases Styles */
-.card .card-body {
-  background-color: #17617A;
-  color: white;
+/* Start News */
+.news-info .card p {
+  color: black;
 }
 
-/* End latest-releases Styles */
+.news-info .card .news-date {
+  font-size: 12px;
+}
+
+.news-info .card .news-writer {
+  color: #17617A;
+}
+
+.news-info .card .news-writer span {
+  color: black;
+}
+
+/* End News */
 /* Start book section styles */
 .header {
   text-align: right !important;
@@ -262,4 +273,4 @@ footer ul.social li i {
 }
 
 /* End footer styles */
-/*# sourceMappingURL=book.css.map */
+/*# sourceMappingURL=article.css.map */
