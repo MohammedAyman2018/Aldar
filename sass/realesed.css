@@ -52,6 +52,7 @@ h2.header {
 }
 
 .recommended-books .card .card-body, .latest-releases .card .card-body, .category .card .card-body {
+  padding: 20px 10px !important;
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;

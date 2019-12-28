@@ -194,87 +194,6 @@ nav.scrolled div.collapse ul.navbar-nav li.nav-item a:hover {
 }
 
 /* End Navbar styles */
-/* Start Banner styles */
-.banner {
-  background-image: url("../img/banner.png");
-}
-
-.banner .welcome {
-  z-index: 20;
-}
-
-.banner .overlay {
-  content: '';
-  position: absolute;
-  z-index: 0;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-}
-
-.banner .scroll {
-  -webkit-animation-name: scroll;
-          animation-name: scroll;
-  -webkit-animation-duration: 0.8s;
-          animation-duration: 0.8s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
-  font-size: 20px;
-  position: absolute;
-  bottom: 50px;
-  left: 50%;
-}
-
-@-webkit-keyframes scroll {
-  0% {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
-  }
-  100% {
-    -webkit-transform: translateY(10px);
-            transform: translateY(10px);
-  }
-}
-
-@keyframes scroll {
-  0% {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
-  }
-  100% {
-    -webkit-transform: translateY(10px);
-            transform: translateY(10px);
-  }
-}
-
-/* Small devices (landscape phones, 576px and up)*/
-@media (max-width: 576px) {
-  .banner .welcome h1 {
-    font-size: 20px;
-    line-height: 1.6;
-  }
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 577px) and (max-width: 991px) {
-  .banner .welcome h1 {
-    font-size: 30px;
-    line-height: 1.6;
-  }
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  .banner .welcome h1 {
-    font-size: auto;
-    line-height: 1.6;
-  }
-}
-
 /* Start latest-releases Styles */
 .card .card-body {
   background-color: #17617A;
@@ -282,50 +201,48 @@ nav.scrolled div.collapse ul.navbar-nav li.nav-item a:hover {
 }
 
 /* End latest-releases Styles */
-/* Start libraries */
-.libraries .card > div {
-  position: relative;
+/* Start News */
+.news-info .card p {
+  color: black;
 }
 
-.libraries .card .overlay {
-  content: " ";
-  display: block;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-  position: absolute;
+.news-info .card .news-date {
+  font-size: 12px;
 }
 
-.library-name {
-  z-index: 50;
-  position: inherit;
-  display: inline;
-  color: white;
+.news-info .card .news-writer {
+  color: #17617A;
 }
 
-/* Change the padding of the body of card */
-.card .card-body {
-  padding: 20px 10px !important;
+.news-info .card .news-writer span {
+  color: black;
 }
 
-/* Start Form styles */
-form .form-group input, form .form-group textarea {
-  border: none;
+/* End News */
+body {
+  padding-top: 70px;
+}
+
+/* Start pagenation styles */
+.pagination {
+  padding: 0;
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+
+.pagination .page-item .page-link {
+  color: #17617A;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
   border-radius: 0;
 }
 
-form .form-group input {
-  background-color: #e2e8f0;
-  padding: 1rem .75rem;
+.pagination .page-item .page-link:hover {
+  color: #E7E8EA;
+  background-color: #17617A;
 }
 
-form .form-group textarea {
-  background-color: #e2e8f0;
-}
-
-/* Start Form styles */
+/* End pagenation styles */
 /* Start footer styles */
 footer {
   background-color: #17617A;
@@ -356,4 +273,4 @@ footer ul.social li i {
 }
 
 /* End footer styles */
-/*# sourceMappingURL=home.css.map */
+/*# sourceMappingURL=news.css.map */
