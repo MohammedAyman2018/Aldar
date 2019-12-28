@@ -249,5 +249,23 @@ footer ul.social li i {
   font-size: 20px;
 }
 
+footer img {
+  width: 20%;
+}
+
+/* small devices (Phones, 426px and down) */
+@media (max-width: 576px) {
+  footer img {
+    width: 100%;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 576px) and (max-width: 992px) {
+  footer img {
+    width: 40%;
+  }
+}
+
 /* End footer styles */
 /*# sourceMappingURL=realesed.css.map */
